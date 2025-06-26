@@ -228,7 +228,7 @@
           const toMouse = mouse3D.clone().sub(mesh.position);
           const distToMouse = toMouse.length();
           if (distToMouse > 0.1) {
-            toMouse.normalize().multiplyScalar(0.015);
+            toMouse.normalize().multiplyScalar(0.008);
             velocity.add(toMouse);
           }
 
